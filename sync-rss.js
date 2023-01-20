@@ -11,11 +11,11 @@ const {DB_PROPERTIES, PropertyType, sleep} = require('./util');
 config();
 
 const RATING_TEXT = {
-  '很差': 1,
-  '较差': 2,
-  '还行': 3,
-  '推荐': 4,
-  '力荐': 5,
+  '很差': '⭐️☆☆☆☆',
+  '较差': '⭐️⭐️☆☆☆',
+  '还行': '⭐️⭐️⭐️☆☆',
+  '推荐': '⭐️⭐️⭐️⭐️☆',
+  '力荐': '⭐️⭐️⭐️⭐️⭐️',
 };
 const done = /^(看过|听过|读过|玩过)/;
 const CATEGORY = {
